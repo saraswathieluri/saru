@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Plant Care | Plant Hub</title>
+<style>
+:root{--green:#1f6b3b;--light:#eff9f0;--lime:#a8d65b;--pink:#ff7fa5;--gold:#ffc94d;--dark:#173524}
+*{box-sizing:border-box}body{margin:0;font-family:Arial,sans-serif;color:var(--dark);background:#fffdf7}
+nav{position:sticky;top:0;z-index:20;display:flex;align-items:center;justify-content:space-between;padding:15px 7%;background:rgba(255,253,247,.95);backdrop-filter:blur(10px);box-shadow:0 2px 12px #00000012}
+.brand{font-size:1.6rem;font-weight:800;color:var(--green)}.brand span{color:#245d37}.links{display:flex;gap:18px;align-items:center}.links a{text-decoration:none;color:var(--dark);font-weight:600}.links a:hover{color:var(--green)}.menu{display:none;border:0;background:none;font-size:25px}
+.hero{padding:75px 8%;display:grid;grid-template-columns:1.1fr .9fr;gap:35px;align-items:center;background:radial-gradient(circle at top left,#dff5dd,transparent 48%),linear-gradient(135deg,#fffdf7,#f1faed)}
+h1{font-size:clamp(2.5rem,6vw,5rem);margin:0 0 15px;color:var(--green);line-height:1}.lead{font-size:1.15rem;line-height:1.7;color:#496154}.btn{display:inline-block;padding:14px 23px;margin:10px 8px 0 0;border-radius:999px;text-decoration:none;font-weight:700;background:var(--green);color:white;border:2px solid var(--green)}.btn.alt{background:white;color:var(--green)}
+.visual{min-height:350px;border-radius:40px;background:linear-gradient(145deg,#bce59e,#fdf5c9);display:grid;place-items:center;font-size:150px;box-shadow:20px 20px 0 #ffdf83}
+section{padding:65px 8%}.title{text-align:center;font-size:2.3rem;color:var(--green);margin:0 0 12px}.sub{text-align:center;color:#63766a;max-width:650px;margin:0 auto 35px;line-height:1.6}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:22px}.card{background:white;padding:25px;border-radius:25px;box-shadow:0 12px 35px #17402212;border:1px solid #e7f0e5}.icon{font-size:50px}.card h3{margin:12px 0 8px;color:var(--green)}.price{font-weight:800;color:#e55d86}
+.banner{background:linear-gradient(135deg,var(--green),#3e9254);color:white;border-radius:30px;padding:45px;margin:0 8% 65px;text-align:center}
+footer{background:#163b27;color:#e8f7e9;padding:40px 8%;margin-top:50px}.footergrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:20px}footer a{color:#e8f7e9;text-decoration:none;display:block;margin:8px 0}
+form{max-width:700px;margin:auto;background:white;padding:30px;border-radius:25px;box-shadow:0 12px 35px #17402212}input,textarea,select{width:100%;padding:14px;border:1px solid #d7e5d7;border-radius:12px;margin:7px 0 18px;font-size:1rem}textarea{min-height:130px}.faq details{background:white;padding:18px 22px;border-radius:15px;margin:12px auto;max-width:800px;box-shadow:0 6px 20px #0000000b}.table{width:100%;border-collapse:collapse;background:white;border-radius:20px;overflow:hidden}.table th,.table td{padding:15px;border-bottom:1px solid #edf1ed;text-align:left}.table th{background:#eaf7e8;color:var(--green)}
+@media(max-width:800px){.hero{grid-template-columns:1fr;padding:50px 7%}.links{display:none;position:absolute;right:5%;top:65px;background:white;padding:20px;border-radius:15px;box-shadow:0 10px 30px #0002;flex-direction:column}.links.show{display:flex}.menu{display:block}.visual{min-height:250px;font-size:110px}}
+</style>
+
+</head><body>
+
+<nav>
+  <div class="brand">🌿 <span>Plant</span> Hub</div>
+  <button class="menu" onclick="document.querySelector('.links').classList.toggle('show')">☰</button>
+  <div class="links">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="shop.html">Shop</a>
+    <a href="services.html">Services</a>
+    <a href="plant-care.html">Plant Care</a>
+    <a href="contact.html">Contact</a>
+    <a href="cart.html">🛒 Cart</a>
+  </div>
+</nav>
+
+
+<section><h1 class="title">Plant Care Guide 🌿</h1><p class="sub">Simple tips for happy plants.</p>
+<table class="table"><tr><th>Plant Type</th><th>Water</th><th>Light</th><th>Tip</th></tr>
+<tr><td>Money Plant</td><td>When soil is slightly dry</td><td>Bright indirect light</td><td>Avoid overwatering</td></tr>
+<tr><td>Snake Plant</td><td>Low watering</td><td>Low to bright light</td><td>Let soil dry first</td></tr>
+<tr><td>Succulent</td><td>Very little</td><td>Bright light</td><td>Use well-draining soil</td></tr></table></section>
+<section class="faq"><h2 class="title">Quick FAQs</h2>
+<details><summary><b>How often should I water my plants?</b></summary><p>It depends on the plant, pot and weather. Check the soil before watering.</p></details>
+<details><summary><b>Why are leaves turning yellow?</b></summary><p>Common reasons include overwatering, low light or nutrient problems.</p></details>
+<details><summary><b>Can beginners keep plants?</b></summary><p>Yes! Start with easy-care plants such as snake plant or money plant.</p></details>
+</section>
+
+
+<footer>
+<div class="footergrid">
+<div><h2>🌿 Plant Hub</h2><p>Greener Homes ♥ Happier Hearts</p></div>
+<div><h3>Explore</h3><a href="shop.html">Shop Plants</a><a href="services.html">Services</a><a href="plant-care.html">Plant Care</a></div>
+<div><h3>Contact</h3><p>📞 +91 XXXXX XXXXX</p><p>✉️ hello@planthub.com</p><p>📍 Andhra Pradesh, India</p></div>
+</div>
+<p style="text-align:center;margin-top:25px">© 2026 Plant Hub. All rights reserved.</p>
+</footer>
+
+</body></html>
